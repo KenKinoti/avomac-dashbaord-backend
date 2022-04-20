@@ -244,7 +244,6 @@ func CreateSupplier(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-
 // DetailCompany get specific company details
 func DetailCompany(w http.ResponseWriter, r *http.Request) {
 	payload := Company{}
@@ -281,7 +280,7 @@ func main() {
 	if err := godotenv.Load(); err != nil {
 		log.Println("File .env not found, reading port configuration from ENV")
 	}
-	
+
 	port := os.Getenv("port")
 
 	if port == "" {
