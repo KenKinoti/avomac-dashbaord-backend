@@ -1,2 +1,2 @@
 run:
-	go build . && ./go-mysql-crud
+	go build . && ./golang

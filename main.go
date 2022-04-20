@@ -284,6 +284,10 @@ func main() {
 
 	port := os.Getenv("port")
 
+	if port == "" {
+        port = "8080"
+	}
+
 	http.ListenAndServe(":"+port, Logger())
 
 }
