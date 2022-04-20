@@ -281,6 +281,7 @@ func main() {
 	if err := godotenv.Load(); err != nil {
 		log.Println("File .env not found, reading port configuration from ENV")
 	}
+	
 	port := os.Getenv("port")
 
 	if port == "" {
