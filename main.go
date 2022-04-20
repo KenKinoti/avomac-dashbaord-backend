@@ -196,7 +196,6 @@ func SuppliersNames(w http.ResponseWriter, r *http.Request) {
 	respondwithJSON(w, http.StatusOK, payload)
 }
 
-
 func CreateDelivery(w http.ResponseWriter, r *http.Request) {
 
 	deliveryStruct := Delivery{}
@@ -284,7 +283,7 @@ func main() {
 	port := os.Getenv("port")
 
 	if port == "" {
-        port = "8090"
+        port = "8080"
 	}
 
 	http.ListenAndServe(":"+port, Logger())
