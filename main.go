@@ -289,6 +289,3 @@ func main() {
 	http.ListenAndServe(":"+port, Logger())
 
 }
-
-c
-golang cloud run error the uer provided container failed to start and listen on the port defined  8080
